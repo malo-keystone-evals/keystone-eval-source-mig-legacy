@@ -1,0 +1,13 @@
+# A legacy (Rails) project's deploy config, for the rehearsal only.
+components:
+  - rails
+  - rails_worker
+base:
+  name: keystone-eval-source-mig-legacy
+environments:
+  production:
+    context: rehearsal-cluster
+    host: legacy.rehearsal.example
+  staging:
+    context: rehearsal-cluster
+    host: staging.legacy.rehearsal.example
